@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+* {
+  box-sizing: border-box;
+}
+body{
+ background: hsl(204, 43%, 93%);
+ font-family: 'Karla', sans-serif;
+ font-size:16px;
+}
+h3, .hassle{
+color:hsl(71, 73%, 54%);
+font-family: 'Karla', sans-serif;
+}
+h2, .join{
+font-family: 'Karla', sans-serif;
+color: hsl(179, 62%, 43%);
+}
+h2, .mon{
+font-family: 'Karla', sans-serif;
+	color:#fff;
+	font-size:21px;
+}
+.price{
+font-family: 'Karla', sans-serif;
+float:left;
+color:#fff;
+font-size:25px;
+}
+p, .gain{
+font-family: 'Karla', sans-serif;
+color:hsl(218, 22%, 67%);
+}
+.per{
+font-family: 'Karla', sans-serif;
+	padding:30px;
+	padding-left:50px;
+  color:hsl(204, 43%, 93%);
+}
+p, .full{
+font-family: 'Karla', sans-serif;
+color:#fff;
+}
+.text{
+font-family: 'Karla', sans-serif;
+	padding-left:10px;
+	font-size:16px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+	margin-top:300px;
+	margin-bottom:500px;
+ border-radius:5px;
+  background:#fff;
+
+}
+
+.flex-item-left {
+flex-direction:row;
+ border-bottom-left-radius: 5px;
+  background-color:hsl(179, 62%, 43%);
+  padding: 20px;
+  flex: 50%;
+}
+
+.flex-item-right {
+   border-bottom-right-radius: 5px;
+  background-color: hsl(179, 62%, 43%);
+  opacity: 0.7;
+  padding: 15px;
+  flex: 50%;
+  
+}
+.card {
+	border-radius:5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+
+  margin:auto;
+
+  font-family: arial;
+  border:0px solid black;
+  
+}
+.item1 {
+flex-direction:column;
+float:left;
+padding:10px;
+width:100%;
+}
+.btn{
+font-family: 'Karla', sans-serif;
+  background-color:hsl(71, 73%, 54%);/* Green */
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  width:250px;
+  border-radius:5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+	.card{
+	padding:33px;
+	}
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+  .flex-item-left {
+ border-bottom-left-radius: 0px;
+  background-color: hsl(179, 62%, 43%);
+  padding: 10px;
+
+}
+.flex-item-right {
+ border-bottom-left-radius: 5px;
+ border-bottom-right-radius: 5px;
+
+  padding: 10px;
+  
+
+}
+}
+
+		.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color:black;
+   text-align: center;
+}
+  </style>
+</head>
+<body>
+
+<div class="card">
+<div class="flex-container">
+
+ <div class="item1"><h2 class="join">Join our community</h2>
+
+  <h3 class="hassle">30-day, hassle-free money back guarantee</h3>
+
+ <p class="gain"> Gain access to our full library of tutorials along with expert code reviews. 
+  Perfect for any developers who are serious about honing their skills.</p>
+</div>
+  <div class="flex-item-left">
+  <h2 class="mon">Monthly Subscription</h2>
+
+  <div class="text"><p class="price">&dollar;29 </p><p class="per"> per month</p></div>
+
+  <p class="full">Full access for less than &dollar;1 a day</p>
+
+  <button class="btn">Sign Up</button></div>
+  <div class="flex-item-right">
+  <h2 class="why">Why Us</h2>
+<p class="tutorial">
+  Tutorials by industry experts
+  Peer &amp; expert code review
+  Coding exercises
+  Access to our GitHub repos
+  Community forum
+  Flashcard decks
+  New videos every week</p></div>
+</div>
+ 
+
+  
+
+  
+  
+ <div class="footer">
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sebastian Frampton</a>.
+    </p>
+  </footer>
+  </div>
+</body>
+</html>
